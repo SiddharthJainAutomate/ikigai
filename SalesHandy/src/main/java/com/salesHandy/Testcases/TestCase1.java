@@ -56,7 +56,7 @@ public class TestCase1 {
 	 
 	@Test
 	public void test1() throws IOException {
-		ExtentTest test = extent.createTest("Sales Handy POC", "Email Sequence pages verification");
+		ExtentTest test = extent.createTest("Sales Handy POC", "Email pages verification");
         driver.manage().window().maximize();
 		driver.get(GlobalVariable.URL);
 		workPage work =new workPage(driver);

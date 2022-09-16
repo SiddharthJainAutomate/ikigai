@@ -56,12 +56,12 @@ public class TestCase1 {
 	 
 	@Test
 	public void test1() throws IOException {
-		ExtentTest test = extent.createTest("Sales Handy POC", "Email Sequence page verification");
+		ExtentTest test = extent.createTest("Sales Handy POC", "Email Sequence pages verification");
         driver.manage().window().maximize();
 		driver.get(GlobalVariable.URL);
 		workPage work =new workPage(driver);
 		work.navigatEmailSequence();
-		test.log(Status.PASS, "Navigated and landed on Email Sequences pages successfully");
+		test.log(Status.PASS, "Navigated and landed on Email Sequences page successfully");
 		work.VerifyDestinationURL();
 		test.log(Status.PASS, "URL of Email Sequence page verified successfully");
 		work.emailonSignUpPage();

@@ -61,7 +61,7 @@ public class TestCase1 {
 		driver.get(GlobalVariable.URL);
 		workPage work =new workPage(driver);
 		work.navigatEmailSequence();
-		test.log(Status.PASS, "Navigated and landed on Email Sequences page successfully");
+		test.log(Status.PASS, "Navigated and landed on Email Sequences pages successfully");
 		work.VerifyDestinationURL();
 		test.log(Status.PASS, "URL of Email Sequence page verified successfully");
 		work.emailonSignUpPage();
